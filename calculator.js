@@ -52,8 +52,7 @@ function on_calculate_clicked() {
   }
 }
 
-function on_operator_clicked(event) {
-  var operator = event.target.value;
+function on_operator_clicked(operator) {
   if (!error) {
     //If the last action was an operator, then overwrite it
     if (last_action == "operator") {
@@ -90,9 +89,8 @@ function on_operator_clicked(event) {
   }
 }
 
-function on_value_clicked(event) {
+function on_value_clicked(value) {
   if (!error) {
-    var value = event.target.value;
     //If the last action was a value then add the next number to the end of it
     if (last_action == "value") {
       var currentDisplay = $("#main_display").text();
