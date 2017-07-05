@@ -103,6 +103,10 @@ function on_value_clicked(value) {
         $("#main_display").append(value);
       }
     } else {
+      //If a number is pressed after calculate, then it should be a new operation
+      if (last_action == "calculate") {
+        on_clear_clicked();
+      }
       //Otherwise, set the main display to the new number
       if (value == ".") {
         //Leading period should have a 0 in front of it

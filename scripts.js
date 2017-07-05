@@ -61,7 +61,6 @@ $(document).ready(function(){
     switch (event.which) {
       case 8:
         //Backspace
-        //TODO - 1+1, enter, bs, anything else, enter, gets weird results
         if (last_action != "calculate" && last_action != "operator") {
           var text = $("#main_display").text();
           if (text !== "0"){
