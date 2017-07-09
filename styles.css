@@ -1,3 +1,106 @@
-h1 {
+body {
+  background: #707070 !important;
+}
+
+#calculator {
+  font-family: 'Share Tech Mono', monospace;
+  width: 40em;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1em;
   text-align: center;
+  border-radius: 1.5em;
+  background: #a5a5a5;
+  box-shadow: inset 5px 5px 5px gray, 10px 10px 50px black;
+}
+
+#main_display {
+  font-size: 20pt;
+  background: rgb(209, 209, 209);
+  border-radius: 5px;
+  margin: 0 1em 0 1em;
+  padding: 2px;
+  min-height: 2em;
+  text-align: right;
+}
+
+#sub_display {
+  font-size: 16pt;
+  background: rgb(209, 209, 209);
+  border-radius: 5px;
+  margin: 0 1em 1em 1em;
+  padding: 2px;
+  min-height: 2em;
+  text-align: right;
+}
+
+.row {
+  margin-top: 1em;
+}
+
+#buttons {
+  width: 36em;
+  margin: auto;
+  padding: 1em;
+  position: relative;
+}
+
+/*Button Styles based on https://codepen.io/mediaashley/pen/kLbGf with some modifications*/
+
+button {
+  width: 4em;
+  height: 3em;
+  font-size: 16pt !important;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  cursor:pointer;
+  border: none;
+  background: #877d61;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 0px gray, 5px 5px 0px 0px #473e07, 5px 10px 5px #919191;
+  outline: none !important;
+}
+
+button:active {
+  top:3px;
+  box-shadow: inset 1px 1px 0px #2ab7ec, 2px 2px 0px 0px #07526e, 5px 5px 3px #999;
+}
+button:active:before {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e;
+}
+
+.horizontal-spacer {
+  width: 0.5em;
+  display: inline-block;
+}
+
+.vertical-spacer {
+  height: 1em;
+}
+
+.horizontal-button {
+  width: 9em;
+}
+
+.vertical-button {
+  height: 6.75em;
+}
+
+#calculate-button-container {
+  position: absolute;
+  margin-top: -12.75%;
+  margin-left: 25.5em;
+}
+
+.vertical-button-space {
+  width: 6em;
+  display: inline-block;
 }

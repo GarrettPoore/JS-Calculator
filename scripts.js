@@ -20,7 +20,6 @@ $(document).ready(function(){
   });
 
   $(document).keypress(function(event){
-    console.log(event);
     var key = event.which;
     switch (key) {
       case 13:

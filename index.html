@@ -14,80 +14,67 @@
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container-fluid">
-      <h1>JS Calculator</h1>
+    <div id="calculator">
+      <h1>JavaScript Calculator</h1>
       <div class="row">
-        <div id="main_display" class="col-xs-2 col-sm-offset-6">0</div>
+        <div id="main_display">0</div>
       </div>
       <div class="row">
-        <div id="sub_display" class="col-sm-2 col-sm-offset-6"></div>
+        <div id="sub_display"></div>
       </div>
-      <div class="row">
-        <div class="col-xs-1 col-sm-offset-4">
-          <button id="clear" type="button" class="btn">AC</button>
+      <div id="buttons">
+        <button id="clear" type="button" class="btn">AC</button>
+        <div class="horizontal-spacer"></div>
+        <button id="clear_entry" type="button" class="btn">CE</button>
+        <div class="horizontal-spacer"></div>
+        <button value="/" type="button" class="btn operator">/</button>
+        <div class="horizontal-spacer"></div>
+        <button value="*" type="button" class="btn operator">*</button>
+
+        <div class="vertical-spacer"></div>
+
+        <button value="7" type="button" class="btn value">7</button>
+        <div class="horizontal-spacer"></div>
+        <button value="8" type="button" class="btn value">8</button>
+        <div class="horizontal-spacer"></div>
+        <button value="9" type="button" class="btn value">9</button>
+        <div class="horizontal-spacer"></div>
+        <button value="-" type="button" class="btn operator">-</button>
+
+        <div class="vertical-spacer"></div>
+
+        <button value="4" type="button" class="btn value">4</button>
+        <div class="horizontal-spacer"></div>
+        <button value="5" type="button" class="btn value">5</button>
+        <div class="horizontal-spacer"></div>
+        <button value="6" type="button" class="btn value">6</button>
+        <div class="horizontal-spacer"></div>
+        <button value="+" type="button" class="btn operator">+</button>
+
+        <div class="vertical-spacer"></div>
+
+        <button value="1" type="button" class="btn value">1</button>
+        <div class="horizontal-spacer"></div>
+        <button value="2" type="button" class="btn value">2</button>
+        <div class="horizontal-spacer"></div>
+        <button value="3" type="button" class="btn value">3</button>
+        <div class="horizontal-spacer"></div>
+        <div class="vertical-button-space"></div>
+        <div id="calculate-button-container">
+          <button id="calculate" type="button" class="btn vertical-button">=</button>
         </div>
-        <div class="col-xs-1">
-          <button id="clear_entry" type="button" class="btn">CE</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="/" type="button" class="btn operator">/</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="*" type="button" class="btn operator">*</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-1 col-sm-offset-4">
-          <button value="7" type="button" class="btn value">7</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="8" type="button" class="btn value">8</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="9" type="button" class="btn value">9</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="-" type="button" class="btn operator">-</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-1 col-sm-offset-4">
-          <button value="4" type="button" class="btn value">4</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="5" type="button" class="btn value">5</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="6" type="button" class="btn value">6</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="+" type="button" class="btn operator">+</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-1 col-sm-offset-4">
-          <button value="1" type="button" class="btn value">1</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="2" type="button" class="btn value">2</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="3" type="button" class="btn value">3</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-2 col-sm-offset-4">
-          <button value="0" type="button" class="btn value">0</button>
-        </div>
-        <div class="col-xs-1">
-          <button value="." type="button" class="btn value">.</button>
-        </div>
-        <div class="col-xs-1">
-          <button id="calculate" type="button" class="btn">=</button>
-        </div>
+
+        <div class="vertical-spacer"></div>
+
+        <button value="0" type="button" class="btn value horizontal-button">0</button>
+        <div class="horizontal-spacer"></div>
+        <button value="." type="button" class="btn value">.</button>
+        <div class="horizontal-spacer"></div>
+        <div class="vertical-button-space"></div>
       </div>
     </div>
   </body>

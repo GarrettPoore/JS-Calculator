@@ -94,7 +94,13 @@ function on_value_clicked(value) {
     //If the last action was a value then add the next number to the end of it
     if (last_action == "value") {
       var currentDisplay = $("#main_display").text();
-      if (currentDisplay === "0") {
+      if (value == "." && currentDisplay.includes(".")) {
+        //Do Nothing
+      } else if (currentDisplay.length >= 30) {
+        //Max main_display size
+        $("#main_display").text("Digit Limit Exceeded");
+        error = true;
+      } else if (currentDisplay === "0") {
         if (value == ".") {
           value = "0.";
         }
