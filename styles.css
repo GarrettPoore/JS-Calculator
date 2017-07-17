@@ -12,7 +12,7 @@ body {
   text-align: center;
   border-radius: 1.5em;
   background: #a5a5a5;
-  box-shadow: inset 5px 5px 5px gray, 10px 10px 50px black;
+  box-shadow: inset 2px 2px 5px gray, 5px 5px 5px gray, 5px 5px 20px black;
 }
 
 #main_display {
@@ -64,7 +64,7 @@ button {
   background: #877d61;
   background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
   border-radius: 5px;
-  box-shadow: inset 1px 1px 0px gray, 5px 5px 0px 0px #473e07, 5px 10px 5px #919191;
+  box-shadow: inset 2px 2px 0px gray, 2px 2px 0px #63480f, 5px 5px 0px 0px #473e07, 5px 10px 5px #919191;
   outline: none !important;
 }
 
